@@ -4,10 +4,21 @@
 
 ## 在线地址
 
-| 平台 | 地址 |
-|---|---|
-| GitHub Pages | https://mcjc4.github.io/gaokao-hq/ |
-| 备份 | 见部署状态表 |
+| 平台 | 地址 | 说明 |
+|---|---|---|
+| GitHub Pages | https://mcjc4.github.io/gaokao-hq/ | 本仓库直出 |
+| Vercel（主） | https://gaokao-hq.vercel.app/ | 项目 mcjc4-4034s-projects/gaokao-hq |
+| CloudStudio | https://0bd0929963d24e62a019381674069094.app.workbuddy.link/ | 备用通道 |
+
+### 更新流程
+
+改完 `index.html` 后跑一次：
+
+```bash
+python _dev/deploy_all.py
+```
+
+会同步「CloudStudio 部署目录 → GitHub 新仓库 → Vercel 生产」；CloudStudio 需在对话里让助手再点一次发布。
 
 ## 核心设计
 
